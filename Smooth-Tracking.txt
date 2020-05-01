@@ -1,0 +1,49 @@
+//Pavankumar RamadassVenkatesulu
+//Pseudocode
+//Code will reduce the speed of the shuttle as it approaches a stop 
+func ApproachingStop(route *Shuttletracker.Route, loc *Shuttetracker.Location) (ShuttleTracker.Point)
+{
+	if (shuttle is 3 points away from shuttle_stop){
+		if (shuttle_speed > 25 && shuttle_speed < 35)
+			shuttle_speed = shuttle_speed - 10
+		else if (shuttle_speed > 15 && shuttle_speed < 25)
+			shuttle_speed = shuttle_speed - 5 
+		else if (shuttle_speed > 10 && shuttle_speed < 20)
+			shuttle_speed = shuttle_speed - 2
+		else if (shuttle_speed > 5 && shuttle_speed < 10)
+			shuttle_speed = shuttle_speed - 1
+		else
+			shuttle_speed = shuttle_speed - 0 
+	}
+	
+	if (shuttle is 2 points away from shuttle_stop){
+		if (shuttle_speed > 25 && shuttle_speed < 35)
+			shuttle_speed = shuttle_speed - 20
+		else if (shuttle_speed > 15 && shuttle_speed < 25)
+			shuttle_speed = shuttle_speed - 10 
+		else if (shuttle_speed > 10 && shuttle_speed < 20)
+			shuttle_speed = shuttle_speed - 4
+		else if (shuttle_speed > 5 && shuttle_speed < 10)
+			shuttle_speed = shuttle_speed - 2
+		else
+			shuttle_speed = shuttle_speed - 1
+	}
+	
+	if (shuttle is 1 point away from shuttle_stop){
+		if (shuttle_speed > 25 && shuttle_speed < 35)
+			shuttle_speed = shuttle_speed - 30
+		else if (shuttle_speed > 15 && shuttle_speed < 25)
+			shuttle_speed = shuttle_speed - 20 
+		else if (shuttle_speed > 10 && shuttle_speed < 20)
+			shuttle_speed = shuttle_speed - 8
+		else if (shuttle_speed > 5 && shuttle_speed < 10)
+			shuttle_speed = shuttle_speed - 4
+		else
+			shuttle_speed = shuttle_speed - 2
+	}
+}
+
+func Turning(route *Shuttletracker.Route, loc *Shuttletracker.Location)
+{
+
+}
